@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px 20%;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    /* --selcolor: #1bba1e; */
+}
+
+
+.head-container {
+    margin: 20px 20px 10px;
+    padding: 10px 20px 10px;
+    /* width: 100%; */
+    height: 180px;
+    max-width: 80%;
+    margin-left: 85px;
+}
+
+.body-container {
+    margin: 0 20px 20px;
+    padding: 10px 20px 0;
+    /* width: 100%; */
+    height: 300px;
+    max-width: 80%;
+    margin-top: inherit;
+    margin-left: 85px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.author {
+    display: flex;
+}
+
+.author-img-div {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.author-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.author-name {
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.author-name p {
+    margin: 5px;
+    text-decoration: none;
+    color: #7e8282;
+}
+
+.author-name p span {
+    text-transform: capitalize;
+    font-size: large;
+    color: #131313;
+}
+
+.author-name a {
+    color: #1bba1e;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menu {
+    height: 20px;
+    border-top: .25px solid rgba(128, 128, 128, .1);
+    border-bottom: .25px solid rgba(128, 128, 128, .1);
+    margin: 10px;
+    padding: 10px;
+}
+
+.side-menu,
+.menu-content {
+    float: right;
+
+}
+
+.menu-content {
+    display: none;
+}
+
+.side-menu,
+.menu-content a,
+.left-buttons a {
+    color: #4f4f4f;
+    margin-left: 30px;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.left-buttons {
+    float: left;
+}
+
+/* .left-buttons a {
+    margin-right: 20px;
+    font-size: large;
+    text-decoration: none;
+
+} */
+
+.body-container p,
+h2 {
+    text-align: justify;
+    color: #181818;
+    padding: 10px;
+}
+
+.body-container h2 {
+    text-align: justify;
+
+    padding: 0 10px;
+}
+
+.tools {
+    display: none;
+    padding: 7px;
+    width: 107px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #121212;
+    position: absolute;
+    text-align: justify;
+    z-index: 1;
+
+}
+
+.tools a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 7px;
+}
+
+.tools a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    transform: rotate(180deg);
+    right: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #121212 transparent;
+}
+
