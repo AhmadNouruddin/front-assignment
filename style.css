@@ -9,14 +9,12 @@ body {
     margin: 20px 20%;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
-    /* --selcolor: #1bba1e; */
 }
 
 
 .head-container {
     margin: 20px 20px 10px;
     padding: 10px 20px 10px;
-    /* width: 100%; */
     height: 180px;
     max-width: 80%;
     margin-left: 85px;
@@ -25,7 +23,6 @@ body {
 .body-container {
     margin: 0 20px 20px;
     padding: 10px 20px 0;
-    /* width: 100%; */
     height: 300px;
     max-width: 80%;
     margin-top: inherit;
@@ -104,19 +101,12 @@ h1 {
     font-size: large;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 .left-buttons {
     float: left;
 }
 
-/* .left-buttons a {
-    margin-right: 20px;
-    font-size: large;
-    text-decoration: none;
-
-} */
 
 .body-container p,
 h2 {
@@ -141,7 +131,6 @@ h2 {
     position: absolute;
     text-align: justify;
     z-index: 1;
-
 }
 
 .tools a {
@@ -162,4 +151,3 @@ h2 {
     border-style: solid;
     border-color: transparent transparent #121212 transparent;
 }
-

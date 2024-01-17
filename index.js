@@ -40,23 +40,34 @@ function selectText(event) {
         tools.style.top = posY - 50;
         tools.style.left = posX - 60;
         tools.style.display = "block";
+
     }
     else {
         tools.style.display = "none";
     }
 }
 
+
 function colorSelctedText() {
+    let span = document.createElement('span');
+    span.style.backgroundColor = '#1bba1e';
 
-    document.body.style.setProperty('--selcolor', '#1bba1e');
+    if (window.getSelection) {
+        let sel = window.getSelection();
+        if (sel.rangeCount) {
+            var range = sel.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    }
 }
-
 
 // Event Listeners
 menu.addEventListener('click', showHideMenu);
 likes.addEventListener('click', likesCounter);
 article.addEventListener('mouseup', selectText);
-colorText.addEventListener('click', colorSelctedText);
+
 
 
 
